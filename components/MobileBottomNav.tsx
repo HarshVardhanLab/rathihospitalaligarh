@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, Calendar, Stethoscope, Phone, Menu } from 'lucide-react'
+import { Home, Calendar, Stethoscope, Phone, Menu, Info, Briefcase, Users } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -37,15 +37,15 @@ export default function MobileBottomNav() {
   
   const navItems = [
     { href: '/', icon: Home, label: 'Home' },
-    { href: '/appointment', icon: Calendar, label: 'Book' },
-    { href: '/departments', icon: Stethoscope, label: 'Departments' },
+    { href: '/about', icon: Info, label: 'About' },
+    { href: '/departments', icon: Briefcase, label: 'Departments' },
+    { href: '/doctors', icon: Users, label: 'Doctors' },
+    { href: '/services', icon: Stethoscope, label: 'Services' },
     { href: '/contact', icon: Phone, label: 'Contact' },
   ]
 
   const menuItems = [
-    { href: '/about', label: 'About Us' },
-    { href: '/doctors', label: 'Our Doctors' },
-    { href: '/services', label: 'Services' },
+    { href: '/appointment', label: 'Book Appointment' },
     { href: '/opd', label: 'OPD Schedule' },
   ]
 
@@ -122,7 +122,7 @@ export default function MobileBottomNav() {
         transition={{ duration: 0.3, ease: 'easeInOut' }}
         className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur-xl border-t border-outline-variant/20 safe-area-bottom"
       >
-        <div className="flex justify-around items-center px-2 py-3">
+        <div className="flex justify-around items-center px-1 py-2 overflow-x-auto scrollbar-hide">
           {navItems.map((item) => {
             const isActive = pathname === item.href
             const Icon = item.icon
@@ -132,7 +132,7 @@ export default function MobileBottomNav() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setShowMenu(false)}
-                className="relative flex flex-col items-center justify-center min-w-[60px] group"
+                className="relative flex flex-col items-center justify-center min-w-[50px] flex-shrink-0 group"
               >
                 <motion.div
                   className={`flex flex-col items-center justify-center ${
@@ -143,16 +143,16 @@ export default function MobileBottomNav() {
                   {isActive && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute -top-1 w-12 h-12 bg-primary/10 rounded-full"
+                      className="absolute -top-1 w-10 h-10 bg-primary/10 rounded-full"
                       transition={{ type: 'spring', damping: 25, stiffness: 300 }}
                     />
                   )}
                   <Icon 
-                    className={`w-6 h-6 mb-1 relative z-10 ${
+                    className={`w-5 h-5 mb-0.5 relative z-10 ${
                       isActive ? 'stroke-[2.5]' : 'stroke-[2]'
                     }`}
                   />
-                  <span className={`text-[10px] font-medium tracking-wide relative z-10 ${
+                  <span className={`text-[9px] font-medium tracking-wide relative z-10 ${
                     isActive ? 'font-bold' : ''
                   }`}>
                     {item.label}
@@ -165,7 +165,7 @@ export default function MobileBottomNav() {
           {/* Menu Button */}
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className="relative flex flex-col items-center justify-center min-w-[60px]"
+            className="relative flex flex-col items-center justify-center min-w-[50px] flex-shrink-0"
           >
             <motion.div
               className={`flex flex-col items-center justify-center ${
@@ -176,16 +176,16 @@ export default function MobileBottomNav() {
               {showMenu && (
                 <motion.div
                   layoutId="activeTab"
-                  className="absolute -top-1 w-12 h-12 bg-primary/10 rounded-full"
+                  className="absolute -top-1 w-10 h-10 bg-primary/10 rounded-full"
                   transition={{ type: 'spring', damping: 25, stiffness: 300 }}
                 />
               )}
               <Menu 
-                className={`w-6 h-6 mb-1 relative z-10 ${
+                className={`w-5 h-5 mb-0.5 relative z-10 ${
                   showMenu ? 'stroke-[2.5]' : 'stroke-[2]'
                 }`}
               />
-              <span className={`text-[10px] font-medium tracking-wide relative z-10 ${
+              <span className={`text-[9px] font-medium tracking-wide relative z-10 ${
                 showMenu ? 'font-bold' : ''
               }`}>
                 More
