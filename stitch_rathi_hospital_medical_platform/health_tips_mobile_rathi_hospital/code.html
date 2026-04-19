@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wellness Hub - Rathi Hospital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#10b981",
+                    "tertiary-fixed": "#ffdf9f",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-secondary-fixed": "#131b2e",
+                    "on-background": "#161d19",
+                    "inverse-primary": "#4edea3",
+                    "surface": "#f4fbf4",
+                    "surface-container-high": "#e3eae3",
+                    "primary-fixed": "#6ffbbe",
+                    "on-secondary-fixed-variant": "#3f465c",
+                    "on-primary-fixed": "#002113",
+                    "tertiary": "#795900",
+                    "surface-container": "#e8f0e9",
+                    "outline-variant": "#bbcabf",
+                    "inverse-on-surface": "#ebf3eb",
+                    "on-tertiary-container": "#4a3500",
+                    "tertiary-container": "#ce9a00",
+                    "primary-fixed-dim": "#4edea3",
+                    "secondary-fixed": "#dae2fd",
+                    "background": "#f4fbf4",
+                    "surface-container-low": "#eef6ee",
+                    "surface-container-highest": "#dde4dd",
+                    "surface-bright": "#f4fbf4",
+                    "on-primary-container": "#00422b",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#dde4dd",
+                    "error": "#ba1a1a",
+                    "outline": "#6c7a71",
+                    "secondary-container": "#dae2fd",
+                    "primary": "#006c49",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-surface": "#161d19",
+                    "inverse-surface": "#2b322d",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d4dcd5",
+                    "secondary": "#565e74",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-secondary-container": "#5c647a",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#3c4a42",
+                    "surface-tint": "#006c49",
+                    "secondary-fixed-dim": "#bec6e0",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f4fbf4; color: #161d19; }
+        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg shadow-xl shadow-emerald-900/5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400">menu</span>
+<span class="text-xl font-extrabold text-emerald-900 dark:text-emerald-50 font-['Plus_Jakarta_Sans'] tracking-tight">Restorative</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-100">
+<img alt="User Profile Avatar" data-alt="close-up portrait of a professional healthcare provider with a kind expression in a bright modern medical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqrnNU0dxhzVWF-IaxlRv6gI_HqL2Na0FO_xwxlhzMdzgWG8PXDpYEKVlukQN9o9lAs2Vmq-86ehNyXAKgWdV9oOh2IfjfGfk_xBHMD5p-3Yt2GpLFW6Qffim9MH7sTPUUfvkxI_j2IaOyrQA0Z_yslY8acKLxkjElyGRnmLFn4_8L8qbW-pkSQOQ1k3AZ918US03YP9Wi6zLI_w27DqeRifEgbPekHb6nDE05Q0ObSat7m4JeMwVtesFJDiYiusW2lAwI4obJrTc"/>
+</div>
+</header>
+<main class="mt-20 px-6 space-y-8">
+<!-- Hero Section -->
+<section class="pt-4">
+<h1 class="text-4xl font-headline font-extrabold text-on-surface tracking-tight leading-tight">Wellness Hub</h1>
+<p class="text-on-surface-variant mt-2 text-sm leading-relaxed max-w-[80%]">Curated insights and medical expertise for your restorative journey.</p>
+<div class="mt-6 relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full py-4 pl-12 pr-4 bg-surface-container-low rounded-2xl border-none focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all duration-300 placeholder:text-outline/60 text-sm" placeholder="Search restorative tips..." type="text"/>
+</div>
+</section>
+<!-- Category Filter -->
+<section class="-mx-6">
+<div class="flex overflow-x-auto hide-scrollbar px-6 gap-3">
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-primary text-on-primary text-xs font-semibold tracking-wide shadow-lg shadow-primary/20">All Topics</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-semibold tracking-wide hover:bg-surface-container-highest transition-colors">Nutrition</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-semibold tracking-wide hover:bg-surface-container-highest transition-colors">Mindfulness</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-semibold tracking-wide hover:bg-surface-container-highest transition-colors">Cardiology</button>
+<button class="whitespace-nowrap px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-semibold tracking-wide hover:bg-surface-container-highest transition-colors">Recovery</button>
+</div>
+</section>
+<!-- Vertical Stack of Blog Post Cards -->
+<section class="space-y-6">
+<!-- Featured Card (Asymmetric) -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group border border-outline-variant/10">
+<div class="h-56 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="woman practicing peaceful yoga pose in a sun-drenched minimalist room with soft green plants and airy morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz1PJTC3nLOJk3MOjdAstafPgW9qkAui2a9bdN2Qo_VHe1Ge41J4xpMDqxSt7bz3NcELZtbLJryGKz6A_In9klSjGgki-FtCtMJPCIdqZFwraq_68cTKdnE0BBuzIQrxeYzj-vYs-pw1O2f6HTZ3bQWhLJWYOVkgwni6SN-7Tfh_UUA7URDdlqJZyXXjsTHczN-PXhtROHrhXnmpfywZLri23reDLxXmi0aGVn1fFmJhTU60a19dqHtxTuuxUIk_mztKq5P3AG1H0"/>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-md">Featured</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-[10px] font-bold text-primary uppercase tracking-tighter">Holistic Health</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-[10px] text-outline font-medium">8 min read</span>
+</div>
+<h2 class="text-xl font-headline font-bold text-on-surface leading-snug mb-3">The Art of Mindful Recovery: Why Rest is Your Best Medicine</h2>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4 line-clamp-2">Discover how neuro-plasticity and intentional stillness can accelerate post-operative healing and mental clarity.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs group/link" href="#">
+                        Read Full Story
+                        <span class="material-symbols-outlined text-[18px] ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Standard Card 1 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden flex items-center p-4 gap-4 border border-outline-variant/10">
+<div class="w-24 h-24 shrink-0 rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="vibrant bowl of fresh colorful vegetables and grains arranged aesthetically on a rustic stone table with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv4PvTPn25V3WcVAp9-sUMb3SIRLKAvfqYqCH_lnvYQbQbO8xz9xYFRTeLZSFvlUPD4VCexmilgOKB6uSICmuSNOYiQxnIkv2xE5JrlfRfPKcZ3XyF8gn6iQrvEpsFM9YSvsLXdiU7cLoSa6pbRyrtCdAscaYCAacoAESek7NNHFYoHsHhAQoXMQ3DQUGVX9Rhbcn3juZ6NaNs1e8joolU2U_A3nXMxrwK8ePZp2m-2rOPC8KWD51lFbwo-dHcBWPMDVWzxJjtO-I"/>
+</div>
+<div class="flex-1">
+<span class="text-[10px] font-bold text-tertiary uppercase tracking-tighter mb-1 block">Nutrition</span>
+<h3 class="text-md font-headline font-bold text-on-surface leading-tight mb-2">Superfoods that Fuel Your Heart</h3>
+<a class="text-xs font-semibold text-primary/80" href="#">Read More</a>
+</div>
+</article>
+<!-- Standard Card 2 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden flex items-center p-4 gap-4 border border-outline-variant/10">
+<div class="w-24 h-24 shrink-0 rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="overhead view of a fresh Mediterranean salad with bright tomatoes and greens in a ceramic bowl on a light textured background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZvP3UUvpvholOjmPgR_0rPrJVAprbnNhm2SklZa5VLH2maofr7PkDkktmPyqcaTq5M0oM5OnbambiWp7jUnk3D3_vNsP38nLqXGWRt1mk2XvdOqWG423aFqqrmcLSe7twiavlkIqn8l-ilcm5cQ6ufFcuiW4B8T0A-U2AE_50-QvpzOlhHs9L3R9piqDdJ8WZyg4zNu3WpTKY-AKc0XrNYShkbYfNTK3-4xcwfdSkIH7POnjO5TQcqsTKlA-2vNH4Ujw09Z1WT7o"/>
+</div>
+<div class="flex-1">
+<span class="text-[10px] font-bold text-primary uppercase tracking-tighter mb-1 block">Prevention</span>
+<h3 class="text-md font-headline font-bold text-on-surface leading-tight mb-2">Morning Routines for Longevity</h3>
+<a class="text-xs font-semibold text-primary/80" href="#">Read More</a>
+</div>
+</article>
+<!-- Standard Card 3 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden flex items-center p-4 gap-4 border border-outline-variant/10">
+<div class="w-24 h-24 shrink-0 rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="serene morning landscape with mist rising over a calm lake at dawn with cool blue and soft orange light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYNWrDbAYACqeIth1aLaI2IC8ltlqdUGYaSluFdAzhOO_x2khhh3APOX891Yz-EDreqO5fAzUI-tBUoz_lpPWRmrm6t1zJqh8L6aJfbz-73mIx7OudOrvJBQYu9z77tNWPatClH-wqJSWFMAajpDqDSud5IaReKQqSDXi0YGyx3AujG27uRL9caz0SQO3LKrW3tRQvJgH3bC-KY8JoW_De1U9TWpC_C3Vv44rR1KsJO3jWqipl_0MBJbtbJRYZwhTYqJFJtRSf9Wk"/>
+</div>
+<div class="flex-1">
+<span class="text-[10px] font-bold text-secondary uppercase tracking-tighter mb-1 block">Sleep Hygiene</span>
+<h3 class="text-md font-headline font-bold text-on-surface leading-tight mb-2">The Science of Deep Sleep cycles</h3>
+<a class="text-xs font-semibold text-primary/80" href="#">Read More</a>
+</div>
+</article>
+</section>
+<!-- Newsletter Signup Section -->
+<section class="bg-primary-container/20 rounded-lg p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 text-center">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1; font-size: 40px;">mail</span>
+<h2 class="text-2xl font-headline font-extrabold text-on-primary-container leading-tight">Stay Restored</h2>
+<p class="text-sm text-on-primary-container/70 mt-2 mb-6">Weekly wellness wisdom delivered straight to your inbox.</p>
+<div class="flex flex-col gap-3">
+<input class="w-full bg-white/60 backdrop-blur-sm border-none rounded-xl py-3 px-4 text-sm focus:ring-2 focus:ring-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary font-bold py-4 rounded-xl text-sm tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-all">Subscribe Now</button>
+</div>
+<p class="text-[10px] text-on-primary-container/50 mt-4">We respect your privacy. Unsubscribe anytime.</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl shadow-[0_-10px_40px_rgba(16,185,129,0.08)] rounded-t-[2.5rem]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-emerald-500 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-emerald-500 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="calendar_add_on">calendar_add_on</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide mt-1">Appoint</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-emerald-500 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide mt-1">Doctors</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 hover:text-emerald-500 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide mt-1">Profile</span>
+</div>
+</nav>
+<!-- Floating Action Button (SUPPRESSED on Details/Blog page as per instructions, but placeholder if needed for context) -->
+</body></html>

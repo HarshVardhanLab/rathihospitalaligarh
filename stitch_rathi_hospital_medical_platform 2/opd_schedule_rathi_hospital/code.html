@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OPD Schedule | Rathi Hospital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#dae2fd",
+                        "surface-bright": "#f4fbf4",
+                        "secondary": "#565e74",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-surface-variant": "#3c4a42",
+                        "on-background": "#161d19",
+                        "on-tertiary-container": "#4a3500",
+                        "inverse-surface": "#2b322d",
+                        "inverse-on-surface": "#ebf3eb",
+                        "secondary-fixed": "#dae2fd",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-container-low": "#eef6ee",
+                        "error-container": "#ffdad6",
+                        "primary": "#006c49",
+                        "tertiary-fixed": "#ffdf9f",
+                        "inverse-primary": "#4edea3",
+                        "on-surface": "#161d19",
+                        "surface-container-high": "#e3eae3",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-container-highest": "#dde4dd",
+                        "surface-dim": "#d4dcd5",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#e8f0e9",
+                        "surface": "#f4fbf4",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#795900",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#6ffbbe",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary-container": "#00422b",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-variant": "#dde4dd",
+                        "background": "#f4fbf4",
+                        "on-primary-fixed": "#002113",
+                        "primary-container": "#10b981",
+                        "tertiary-container": "#ce9a00",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#006c49",
+                        "outline": "#6c7a71",
+                        "outline-variant": "#bbcabf",
+                        "on-tertiary-fixed": "#261a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg shadow-sm shadow-emerald-900/5 font-['Plus_Jakarta_Sans'] antialiased tracking-tight">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50">Rathi Hospital</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Departments</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Doctors</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden md:block text-emerald-700 dark:text-emerald-400 font-bold border-b-2 border-emerald-500 pb-1" href="#">OPD Schedule</a>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full text-sm font-bold tracking-tight uppercase hover:shadow-lg active:scale-95 transition-all">
+                    Book Appointment
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-12 pb-24">
+<!-- Emergency Banner -->
+<div class="mb-16 relative overflow-hidden rounded-lg bg-tertiary-container p-1 shadow-xl">
+<div class="bg-tertiary-container px-8 py-6 rounded-[calc(2rem-4px)] flex flex-col md:flex-row items-center justify-between gap-6 border-2 border-white/20">
+<div class="flex items-center gap-6">
+<div class="bg-on-tertiary-container/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<div>
+<h2 class="text-2xl font-extrabold text-on-tertiary-container tracking-tight">Emergency available 24/7</h2>
+<p class="text-on-tertiary-container/80 font-medium">Critical care and trauma services are operational around the clock.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-on-tertiary-container text-white px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 active:scale-95 transition-all">Call Now: +91 123 456 7890</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Header Section (Asymmetric) -->
+<div class="lg:col-span-4 sticky top-32">
+<h1 class="text-5xl font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-6">
+                    OPD Consultation <br/>
+<span class="text-primary italic">Timings</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-sm">
+                    Plan your visit with our expert consultants. We prioritize your health with timely and efficient care cycles.
+                </p>
+<div class="space-y-4">
+<button class="w-full flex items-center justify-between bg-surface-container-highest px-6 py-5 rounded-lg group hover:bg-primary-container transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary">download</span>
+<span class="font-bold text-on-surface group-hover:text-on-primary">Download Schedule PDF</span>
+</div>
+<span class="material-symbols-outlined text-on-surface group-hover:text-on-primary">chevron_right</span>
+</button>
+<div class="p-6 bg-surface-container-high rounded-lg">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary">info</span>
+<span class="font-bold text-on-surface">Important Note</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Please arrive 15 minutes before your scheduled slot for registration. Timings are subject to doctor availability and emergencies.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Schedule Bento/Table Section -->
+<div class="lg:col-span-8">
+<div class="space-y-4">
+<!-- Featured Dept 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border-l-8 border-primary flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all hover:shadow-md">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">female</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Gynaecology</h3>
+<p class="text-on-surface-variant text-sm">Specialized Women's Healthcare</p>
+</div>
+</div>
+<div class="bg-surface-container-low px-6 py-3 rounded-full">
+<span class="text-lg font-extrabold text-primary">11 AM – 3 PM</span>
+</div>
+</div>
+<!-- Featured Dept 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm border-l-8 border-primary-container flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all hover:shadow-md">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-primary-container" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">General Medicine</h3>
+<p class="text-on-surface-variant text-sm">Primary Care &amp; Diagnostics</p>
+</div>
+</div>
+<div class="bg-surface-container-low px-6 py-3 rounded-full">
+<span class="text-lg font-extrabold text-primary-container">10 AM – 2 PM</span>
+</div>
+</div>
+<!-- Other Depts Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary opacity-60">cardiology</span>
+<span class="font-bold text-on-surface">Cardiology</span>
+</div>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant/70 bg-white/50 px-3 py-1 rounded-full">By Appointment Only</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary opacity-60">neurology</span>
+<span class="font-bold text-on-surface">Neurology</span>
+</div>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant/70 bg-white/50 px-3 py-1 rounded-full">By Appointment Only</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary opacity-60">orthopedics</span>
+<span class="font-bold text-on-surface">Orthopaedics</span>
+</div>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant/70 bg-white/50 px-3 py-1 rounded-full">By Appointment Only</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary opacity-60">child_care</span>
+<span class="font-bold text-on-surface">Paediatrics</span>
+</div>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant/70 bg-white/50 px-3 py-1 rounded-full">By Appointment Only</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary opacity-60">visibility</span>
+<span class="font-bold text-on-surface">Ophthalmology</span>
+</div>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant/70 bg-white/50 px-3 py-1 rounded-full">By Appointment Only</span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex items-center justify-between group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary opacity-60">dentistry</span>
+<span class="font-bold text-on-surface">Dental Care</span>
+</div>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-surface-variant/70 bg-white/50 px-3 py-1 rounded-full">By Appointment Only</span>
+</div>
+</div>
+</div>
+<!-- Decoration/Context Image -->
+<div class="mt-12 overflow-hidden rounded-lg shadow-2xl">
+<img alt="Modern hospital reception" class="w-full h-80 object-cover" data-alt="Modern clean hospital reception area with warm lighting, wood accents, and professional staff in background for restorative medical environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6iEFghF2bSR-eB_6WZ9kQn19eO097EgCz9XsdUyLH2iPjlnWzluEtBoWUP_8Nw7FMbrKcp0Bpqcxe-68UnIACUWT4mq94d0IbGzXsHiibIlQd2JjeIXlNZecgdV0HW0ZxnpHnN5ZHryXuYM7ImS5TcLUhJIkzT5mcZPinf6nOBPDC711EyrSTlOZ2ryLn20Ml9Ji8-lwOdBkpW82wM3IyVXDhFx2ZIFGDtvzZf0XmMR7zEv44D59JOqlzAuEuBAqTl5nRe31mcy4"/>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-slate-50 dark:bg-slate-900 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-emerald-800 dark:text-emerald-200 mb-6">Rathi Hospital</div>
+<p class="text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">Dedicated to Restorative Excellence in medical care and patient wellness.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Emergency Care</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Career</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Feedback</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Newsletter</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Stay updated with our health tips and schedule changes.</p>
+<div class="relative">
+<input class="w-full bg-white dark:bg-slate-800 border-0 rounded-full px-6 py-3 focus:ring-2 focus:ring-emerald-500/20 outline-none" placeholder="Email Address" type="email"/>
+<button class="absolute right-1 top-1 bg-emerald-600 text-white p-2 rounded-full hover:bg-emerald-700 transition-colors">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-400 text-xs">© 2024 Rathi Hospital. Dedicated to Restorative Excellence.</p>
+</div>
+</footer>
+</body></html>

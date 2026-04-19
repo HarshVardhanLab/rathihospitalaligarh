@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book an Appointment | Rathi Hospital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#dae2fd",
+                      "surface-bright": "#f4fbf4",
+                      "secondary": "#565e74",
+                      "on-primary-fixed-variant": "#005236",
+                      "on-surface-variant": "#3c4a42",
+                      "on-background": "#161d19",
+                      "on-tertiary-container": "#4a3500",
+                      "inverse-surface": "#2b322d",
+                      "inverse-on-surface": "#ebf3eb",
+                      "secondary-fixed": "#dae2fd",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#5c4300",
+                      "surface-container-low": "#eef6ee",
+                      "error-container": "#ffdad6",
+                      "primary": "#006c49",
+                      "tertiary-fixed": "#ffdf9f",
+                      "inverse-primary": "#4edea3",
+                      "on-surface": "#161d19",
+                      "surface-container-high": "#e3eae3",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#f9bd22",
+                      "primary-fixed-dim": "#4edea3",
+                      "surface-container-highest": "#dde4dd",
+                      "surface-dim": "#d4dcd5",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#e8f0e9",
+                      "surface": "#f4fbf4",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#795900",
+                      "on-error-container": "#93000a",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#6ffbbe",
+                      "on-secondary-container": "#5c647a",
+                      "on-primary-container": "#00422b",
+                      "on-secondary-fixed": "#131b2e",
+                      "surface-variant": "#dde4dd",
+                      "background": "#f4fbf4",
+                      "on-primary-fixed": "#002113",
+                      "primary-container": "#10b981",
+                      "tertiary-container": "#ce9a00",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#006c49",
+                      "outline": "#6c7a71",
+                      "outline-variant": "#bbcabf",
+                      "on-tertiary-fixed": "#261a00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg shadow-sm shadow-emerald-900/5 antialiased font-['Plus_Jakarta_Sans'] tracking-tight">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50">
+                Rathi Hospital
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full px-3 py-1" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full px-3 py-1" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full px-3 py-1" href="#">Departments</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full px-3 py-1" href="#">Doctors</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full px-3 py-1" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full px-3 py-1" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-emerald-700 font-semibold px-4 py-2 hover:bg-emerald-50 rounded-full transition-all">OPD Schedule</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold tracking-wide shadow-lg shadow-primary/20 active:scale-95 transition-all">Book Appointment</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-12 md:pt-20">
+<!-- Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Content: Introduction & Success State (hidden initially) -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="space-y-4">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Restorative Excellence</span>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tighter">
+                        Your path to <span class="text-primary italic">wellness</span> begins here.
+                    </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                        Experience precision healthcare in a sanctuary designed for recovery. Book your consultation with our world-class specialists today.
+                    </p>
+</div>
+<!-- Quick Contact Sidebar -->
+<div class="bg-surface-container-low rounded-lg p-8 space-y-6">
+<h3 class="font-headline font-bold text-xl text-on-surface">Emergency Support</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant">24/7 Helpline</p>
+<p class="font-bold text-on-surface">+91 123 456 7890</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant">Our Location</p>
+<p class="font-bold text-on-surface">Main Rd, Civil Lines, Raipur</p>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full bg-[#25D366] text-white py-4 rounded-full font-bold flex items-center justify-center gap-2 shadow-xl shadow-green-500/10 hover:shadow-green-500/30 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Book via WhatsApp
+                        </button>
+</div>
+</div>
+<!-- Success Confirmation Mockup (Asymmetric placement) -->
+<div class="relative bg-primary-container/10 p-6 rounded-lg border-l-4 border-primary mt-4">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-on-primary-container">Instant Confirmation</h4>
+<p class="text-sm text-on-primary-container/80">98% of appointments are confirmed within 15 minutes during OPD hours.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Content: The Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_20px_40px_rgba(15,23,42,0.06)] relative overflow-hidden">
+<!-- Subtle Background Texture -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<form class="relative space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Phone Number</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface" placeholder="+91 00000 00000" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Department</label>
+<select class="w-full bg-surface-container-low border-none rounded-lg px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface appearance-none">
+<option>Select Department</option>
+<option>Cardiology</option>
+<option>Neurology</option>
+<option>Orthopedics</option>
+<option>Pediatrics</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Select Doctor</label>
+<select class="w-full bg-surface-container-low border-none rounded-lg px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface appearance-none">
+<option>Select Doctor</option>
+<option>Dr. Ananya Sharma</option>
+<option>Dr. Vikram Rathore</option>
+<option>Dr. Sarah Jenkins</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Preferred Date</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface" type="date"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none text-on-surface resize-none" placeholder="Briefly describe your symptoms or reason for visit..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full font-bold text-lg tracking-wide shadow-2xl shadow-primary/30 hover:translate-y-[-2px] transition-all active:scale-[0.98]" type="submit">
+                                Confirm Appointment Request
+                            </button>
+<p class="text-center text-xs text-on-surface-variant mt-6">
+                                By proceeding, you agree to Rathi Hospital's <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Privacy Policy</a>.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Visual Anchor (Asymmetric Image Section) -->
+<section class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="rounded-lg overflow-hidden h-[500px] shadow-2xl relative order-2 md:order-1">
+<img class="w-full h-full object-cover" data-alt="Modern high-end hospital corridor with warm wood accents, minimalist furniture, and soft natural sunlight streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLqUAyh5rny_o7PNO4HWlultIjkvNqT3kRZClw10HxNv3kP3DprDq9t3ssB-xnepSS-8OImWAkW0B1HEoj61jqX0Wbs2K01T3Vl_lQBCmGc84KnmQWPB_TaaZiKoGPvjCrszwfYMiu7mQbOMDoBHTUhQfYPWjehptoIUVtbyDHE9PkHLM5p5LyqjFQHpEQyeuKZylW8yJfj3WrbBfl6W_8cDV810kEYMMs35ALKMHqoJ22X6xQ7Li548aZshd34CGa-3ZozJ7Auvg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+</div>
+<div class="space-y-8 order-1 md:order-2">
+<h2 class="text-4xl font-headline font-bold text-on-surface tracking-tight">Our Commitment to Your Peace of Mind</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Verified Specialists:</strong> All our doctors are board-certified with a minimum of 10 years of clinical excellence.
+                        </p>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-sm" data-icon="schedule" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Zero Wait-Time:</strong> We value your time. Our digital queue management ensures you see your doctor exactly when scheduled.
+                        </p>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-sm" data-icon="spa" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Healing Environment:</strong> Our hospital architecture is designed to reduce stress and promote faster recovery.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Confirmation Section (Design State) -->
+<section class="mt-32 mb-12 hidden">
+<div class="max-w-3xl mx-auto text-center bg-surface-container-lowest rounded-xl p-16 shadow-2xl">
+<div class="w-24 h-24 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-8">
+<span class="material-symbols-outlined text-5xl" data-icon="task_alt">task_alt</span>
+</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Request Received</h2>
+<p class="text-on-surface-variant text-lg mb-10">We've received your booking request for Cardiology with Dr. Ananya Sharma on Oct 24, 2024. A confirmation SMS has been sent to your phone.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold">Add to Calendar</button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-bold">Manage Booking</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-slate-50 dark:bg-slate-900 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-6">
+<div class="text-xl font-bold text-emerald-800 dark:text-emerald-200">
+                    Rathi Hospital
+                </div>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                    A world-class healthcare institution dedicated to restorative excellence and patient-centric care since 1995.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-widest text-xs">Resources</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Emergency Care</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Career</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Feedback</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-widest text-xs">Legal</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-widest text-xs">Social</h4>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-emerald-600 transition-all opacity-80 hover:opacity-100 cursor-pointer">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-emerald-600 transition-all opacity-80 hover:opacity-100 cursor-pointer">
+<span class="material-symbols-outlined text-lg" data-icon="language">language</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400">© 2024 Rathi Hospital. Dedicated to Restorative Excellence.</p>
+</div>
+</footer>
+</body></html>

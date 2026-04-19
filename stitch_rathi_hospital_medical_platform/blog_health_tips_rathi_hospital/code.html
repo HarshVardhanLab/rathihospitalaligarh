@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wellness Hub: Expert Health Tips &amp; News | Lumina Health</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#10b981",
+                        "tertiary-fixed": "#ffdf9f",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-secondary-fixed": "#131b2e",
+                        "on-background": "#161d19",
+                        "inverse-primary": "#4edea3",
+                        "surface": "#f4fbf4",
+                        "surface-container-high": "#e3eae3",
+                        "primary-fixed": "#6ffbbe",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "on-primary-fixed": "#002113",
+                        "tertiary": "#795900",
+                        "surface-container": "#e8f0e9",
+                        "outline-variant": "#bbcabf",
+                        "inverse-on-surface": "#ebf3eb",
+                        "on-tertiary-container": "#4a3500",
+                        "tertiary-container": "#ce9a00",
+                        "primary-fixed-dim": "#4edea3",
+                        "secondary-fixed": "#dae2fd",
+                        "background": "#f4fbf4",
+                        "surface-container-low": "#eef6ee",
+                        "surface-container-highest": "#dde4dd",
+                        "surface-bright": "#f4fbf4",
+                        "on-primary-container": "#00422b",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#dde4dd",
+                        "error": "#ba1a1a",
+                        "outline": "#6c7a71",
+                        "secondary-container": "#dae2fd",
+                        "primary": "#006c49",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-surface": "#161d19",
+                        "inverse-surface": "#2b322d",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#d4dcd5",
+                        "secondary": "#565e74",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-secondary-container": "#5c647a",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#3c4a42",
+                        "surface-tint": "#006c49",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #006c49 0%, #10b981 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-4 inset-x-4 rounded-full px-6 py-3 z-50 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(15,23,42,0.06)] flex justify-between items-center w-full max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tight text-emerald-900 dark:text-emerald-50">Lumina Health</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors duration-300" href="#">Wellness</a>
+<a class="text-sm font-medium tracking-wide text-emerald-600 dark:text-emerald-300 font-bold border-b-2 border-emerald-500" href="#">Medical Tips</a>
+<a class="text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors duration-300" href="#">Patient Stories</a>
+<a class="text-sm font-medium tracking-wide text-slate-600 dark:text-slate-400 hover:text-emerald-500 dark:hover:text-emerald-300 transition-colors duration-300" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:opacity-80 active:scale-95 transition-all text-on-primary px-6 py-2 rounded-full text-sm font-bold tracking-wide uppercase">
+                Find a Doctor
+            </button>
+</div>
+</nav>
+<main class="pt-32 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="relative overflow-hidden rounded-xl mb-12">
+<div class="hero-gradient p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 min-h-[500px]">
+<div class="flex-1 space-y-6 z-10">
+<h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
+                        Wellness Hub: Expert Health Tips &amp; News
+                    </h1>
+<p class="text-emerald-50 text-xl md:text-2xl font-light max-w-2xl">
+                        Your Guide to a Healthier Life. Discover insights from medical professionals designed to restore your balance and vitality.
+                    </p>
+<div class="relative max-w-md mt-8">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-emerald-200">search</span>
+</div>
+<input class="w-full bg-white/10 border-none backdrop-blur-md rounded-full py-4 pl-12 pr-6 text-white placeholder:text-emerald-100 focus:ring-2 focus:ring-white/30 text-lg" placeholder="Search for health topics..." type="text"/>
+</div>
+</div>
+<div class="hidden lg:block relative w-1/3 aspect-square">
+<div class="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full -rotate-12 transform scale-110"></div>
+<img class="w-full h-full object-cover rounded-full shadow-2xl relative z-10 border-4 border-white/20" data-alt="Modern medical professional holding a digital tablet with a soft green blurred hospital background, high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALYyvZl9A2G_XPPin3hIL2WQdSNtsSOtaWumJ9bbW1E1sU_B4cKhJSi1t6EuHANFujzU9fJX2yBt8wBxTAvpFfjKi1gviqtyAbPqPomR7oW0dgb4vsQsDPvF4FQbWD14QgUB7J9PWs-XpeNG2xGqS1pqdPabw_F1SLzwJHhloyPFfu39nZ9qyPi3gTH8V7XSjeByoZGUYLRpixVMC7ummKXDzN_HIgcHq8LJnzR22uVRG7-QAtXXK895dBEgBUT6PJoTEeNYdGmD0"/>
+</div>
+</div>
+</header>
+<!-- Category Filter -->
+<section class="mb-12 overflow-x-auto pb-4">
+<div class="flex items-center gap-3">
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-bold text-sm whitespace-nowrap">All</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-medium text-sm whitespace-nowrap">Medical Tips</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-medium text-sm whitespace-nowrap">Wellness</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-medium text-sm whitespace-nowrap">Patient Stories</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-medium text-sm whitespace-nowrap">Nutrition</button>
+</div>
+</section>
+<!-- Featured Post -->
+<section class="mb-20">
+<article class="group relative bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col lg:flex-row gap-0 shadow-sm transition-all hover:shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+<div class="lg:w-3/5 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 min-h-[400px]" data-alt="A tranquil scene showing a person practicing mindfulness in a sunlit room with clean green plants, restorative atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ8uqBEjnQFjcL_7ZsOfzz072e6OQZUFp_6-vNiWlbID9T8dLhCw4ShonKhTggHPj1ymkQ0rzmX3ChTQxOWxFK5SMnXKMjcvEuqk50AASKuxmAM7PWVY0dUKzCoJGYIam0nsO08pPTt_Mxf3JD--5Ki5TSeFCNsWOGgebW8PMtrNGD8buo7pHpVnfBRTqxULD-aXEDivvgRs2xTbg2-0OE261aOAZsAM8tmslZnGDcq9iZT_afG71wQTHW7hwHHjCK_CUdrj72mzc"/>
+</div>
+<div class="lg:w-2/5 p-10 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-widest text-xs uppercase mb-4">
+<span class="w-8 h-[2px] bg-primary"></span>
+                        Featured Article
+                    </div>
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-6 leading-tight">
+                        The Future of Longevity: Integrating Restorative Practices into Daily Routines
+                    </h2>
+<p class="text-on-surface-variant text-lg mb-8 line-clamp-3">
+                        Recent clinical studies suggest that small, rhythmic changes to our environmental interaction can boost cellular recovery. Learn how Lumina Health is pioneering restorative wellness programs.
+                    </p>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="font-bold text-sm">Dr. Elena Thorne</p>
+<p class="text-xs text-on-surface-variant italic">Chief of Integrative Medicine</p>
+</div>
+</div>
+<button class="self-start text-primary font-bold border-b-2 border-primary-container pb-1 flex items-center gap-2 group/btn">
+                        Read Full Article
+                        <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Bento Grid of Posts -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col transition-all hover:shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+<img class="w-full aspect-[4/3] object-cover rounded-md mb-6" data-alt="Fresh vibrant organic vegetables in a wooden basket, morning sunlight highlighting textures and colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGMDk9M2JGYpiwqLvW3hhZcAL2Y47YSwL0pwlfh514TNajzjMn4yiRKvc8UyYIgpiwLTUja1OU9lZbKTmyqXNleYn66H-Gr3_NnAfpGJ20j7K1gIbTl6_il0GZzBU4F37PY-A3qt13btr9A5EGv8xeE-0zC_-D8HLM4_bQXlKRl6isigXBvP9PBGlRUlQ4opjKHsU2gxBFV9cvOazwOVJ_8NcP4t2GrH-jydxwem2Xor5o1gPUqYMMsvYD_epsT6A-8Vx6PuhrvsA"/>
+<div class="px-2 pb-4 flex flex-col flex-grow">
+<span class="text-[10px] uppercase font-bold tracking-widest text-tertiary mb-3">Nutrition</span>
+<h3 class="text-xl font-bold mb-4 line-clamp-2 leading-tight">10 Tips for Heart-Healthy Eating Habits</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">Discover the essential nutrients that support cardiovascular health and reduce inflammation naturally.</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-container-high pt-4">
+<span class="text-xs font-medium text-on-surface-variant">By Sarah Miller</span>
+<span class="text-xs text-outline">Oct 12, 2024</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col transition-all hover:shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+<img class="w-full aspect-[4/3] object-cover rounded-md mb-6" data-alt="Modern high-tech intensive care unit with advanced monitoring screens and soft clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4hGGUZI4k83dYuI9nR_we_XIuYkC0CocLvpRcEXh6X-8LHDJujimn-Tauc-1m82Rb6CifCjx853PedsqN0f8c3vyVD2B22oSsMWMll0ss5WgHRM1bqsBGkRBl4AAeBW1POBAWfFzXuUmCtQf_fgh9_i9gBCo_k_FB6xliA5IMrnIF5l7GYlbjp_RCIkIOkWIS3Xz8mS32ULTMptD2SSn531PqHNHN-orRdNevEZV3Pz2f9v-Q9rqLzNk5V1Jevr5ogCUmDWJzhe4"/>
+<div class="px-2 pb-4 flex flex-col flex-grow">
+<span class="text-[10px] uppercase font-bold tracking-widest text-primary mb-3">Medical Tips</span>
+<h3 class="text-xl font-bold mb-4 line-clamp-2 leading-tight">Understanding Modern ICU Care &amp; Monitoring</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">A guide for families navigating the complex world of critical care and patient stabilization technologies.</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-container-high pt-4">
+<span class="text-xs font-medium text-on-surface-variant">Dr. James Wilson</span>
+<span class="text-xs text-outline">Oct 09, 2024</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col transition-all hover:shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+<img class="w-full aspect-[4/3] object-cover rounded-md mb-6" data-alt="A patient smiling while talking to a comforting doctor in a bright modern consultation room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBsrkMEKNcbaatc2II_OCWnGMOZCJvhbTSsU63C1V_Ywwof7WFDKagXmatLbwCVuU_P2kKCZvi99NlL9j6j8ZfaQzOZ6Avm2fp3NWszOoFuTRY5LKlUMuIm-kKyFaCPjxdehDZ4JYRRaG_1zlf3cA6kodK0VXPp9PeNuH5NTNcb0wsnMMOQweohEJv0TOwmU37UIuxRCobz9ny6YSMNXMtgk0X2Q-mj1yKmsYSkX_A6riuEtXN7oaVx4mAHPnDuq823AS5a0Of9cc"/>
+<div class="px-2 pb-4 flex flex-col flex-grow">
+<span class="text-[10px] uppercase font-bold tracking-widest text-secondary mb-3">Patient Stories</span>
+<h3 class="text-xl font-bold mb-4 line-clamp-2 leading-tight">Finding Hope: Arthur’s Journey Through Recovery</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">How one man rediscovered his passion for hiking after a life-changing orthopedic surgery at Lumina.</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-container-high pt-4">
+<span class="text-xs font-medium text-on-surface-variant">Lumina Editorial</span>
+<span class="text-xs text-outline">Oct 05, 2024</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col transition-all hover:shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+<img class="w-full aspect-[4/3] object-cover rounded-md mb-6" data-alt="Close up of a peaceful morning yoga pose in a botanical garden setting, soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx7oCVwbb7tPNS_Xo1-Shv4YgJoUJ1K5r5ApemKAjhTSpaSMbvqKJCpyuKtMP-x5EeCL8eMhAKxm_IRbm73DHA_NxwoYezFdVrgSjew3sHOKIHR5agwa_8n8vSR27DnJlJ7YTtlz6r6cX3XgzWVL3Jxz-Dsr2-VSLvvwOP1iBgv96nRIETUKhb9dhJ1bvuuAXr7LXqSq3cv0sUz-4WvrQObg2qlI0WQe0vMFFBDkncKRuM89i_avwqNIZRGqBVrU9YWQmDW8XVSVM"/>
+<div class="px-2 pb-4 flex flex-col flex-grow">
+<span class="text-[10px] uppercase font-bold tracking-widest text-primary-fixed-dim text-primary mb-3">Wellness</span>
+<h3 class="text-xl font-bold mb-4 line-clamp-2 leading-tight">Circadian Rhythms: Aligning with Your Body Clock</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">Why sleep hygiene and light exposure are the foundation of modern restorative health science.</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-container-high pt-4">
+<span class="text-xs font-medium text-on-surface-variant">Dr. Amara Singh</span>
+<span class="text-xs text-outline">Sep 28, 2024</span>
+</div>
+</div>
+</div>
+<!-- Card 5 (Different Layout for variety) -->
+<div class="bg-tertiary-container text-on-tertiary-container p-8 rounded-lg flex flex-col justify-between lg:col-span-1 shadow-sm">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6">medical_services</span>
+<h3 class="text-2xl font-bold mb-4 leading-tight">Seasonal Immunity: Preparing for Winter</h3>
+<p class="text-on-tertiary-container/80 text-sm mb-6">Quick preventative measures you can take today to safeguard your family’s immune system for the coming months.</p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<button class="bg-on-tertiary-container text-tertiary-container px-6 py-2 rounded-full font-bold text-xs uppercase tracking-wider">Download Guide</button>
+<span class="text-xs font-medium opacity-60">5 min read</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col transition-all hover:shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+<img class="w-full aspect-[4/3] object-cover rounded-md mb-6" data-alt="A focused radiologist analyzing high-definition MRI scans on multiple large bright screens in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCRaIQBRG50BZuAWQGBlHDxo1J2bObr22GMFfZ0-3D4g2ukZ5s5_N8-hNZuOKNb7rtkz8Pn-MTp6nIBaJpNqgdjmCXwdyy-nvAW79WILPMy4rRK9v0POjkbhDeu7Dx3C-NfYIa2zruHfqWWjv94h-L8nLcuf_JtPhQZR5tQYSJ0dmLfRRAruYXp-wMU7enHU-9Im6_aKBZkcONsv1VHKoWtuxMjkSnvV9erI2x6LhNPctzpWaJgMW3tmjyCuxHJ1OzyxYM4_IfrS4"/>
+<div class="px-2 pb-4 flex flex-col flex-grow">
+<span class="text-[10px] uppercase font-bold tracking-widest text-primary mb-3">Medical Tips</span>
+<h3 class="text-xl font-bold mb-4 line-clamp-2 leading-tight">The Role of AI in Early Disease Detection</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">How we are leveraging artificial intelligence to identify markers long before symptoms appear.</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-container-high pt-4">
+<span class="text-xs font-medium text-on-surface-variant">Dr. Robert Chen</span>
+<span class="text-xs text-outline">Sep 22, 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Subscription -->
+<section class="mt-32 relative overflow-hidden">
+<div class="bg-surface-container-high rounded-xl p-12 md:p-20 flex flex-col items-center text-center max-w-4xl mx-auto">
+<div class="absolute top-0 left-0 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-primary-container/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+<h2 class="text-4xl md:text-5xl font-bold mb-6 text-emerald-950">Stay Updated with Health Tips</h2>
+<p class="text-on-surface-variant text-lg mb-10 max-w-xl mx-auto">
+                    Join over 50,000 readers. Receive curated medical insights and wellness strategies delivered directly to your inbox every month.
+                </p>
+<form class="flex flex-col md:flex-row gap-4 w-full max-w-lg">
+<input class="flex-1 px-8 py-4 rounded-full border-none bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-sm text-lg" placeholder="Your email address" required="" type="email"/>
+<button class="hero-gradient text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all active:scale-95 whitespace-nowrap" type="submit">
+                        Subscribe Now
+                    </button>
+</form>
+<p class="mt-6 text-xs text-outline italic">No spam. Only science-backed wellness advice. Unsubscribe anytime.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-20 bg-emerald-50 dark:bg-emerald-900/20 flex flex-col items-center gap-6 text-center">
+<div class="text-lg font-bold text-emerald-900 dark:text-emerald-50">Lumina Health</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-emerald-600 dark:hover:text-emerald-200 transition-all underline" href="#">Privacy Policy</a>
+<a class="hover:text-emerald-600 dark:hover:text-emerald-200 transition-all underline" href="#">Terms of Service</a>
+<a class="hover:text-emerald-600 dark:hover:text-emerald-200 transition-all underline" href="#">Accessibility</a>
+<a class="hover:text-emerald-600 dark:hover:text-emerald-200 transition-all underline" href="#">Contact Us</a>
+</div>
+<div class="text-xs font-normal text-emerald-800 dark:text-emerald-100 max-w-md">
+            © 2024 Lumina Health. Your Path to Restorative Wellness. All rights reserved.
+        </div>
+</footer>
+<!-- FAB for quick contact -->
+<div class="fixed bottom-8 right-8 z-40">
+<button class="w-16 h-16 rounded-full hero-gradient text-white shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</button>
+</div>
+</body></html>

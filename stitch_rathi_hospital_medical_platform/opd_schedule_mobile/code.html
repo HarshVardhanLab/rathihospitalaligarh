@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Restorative - OPD Schedule</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f4fbf4",
+                    "inverse-primary": "#4edea3",
+                    "on-tertiary-container": "#4a3500",
+                    "surface-tint": "#006c49",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "secondary": "#565e74",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#bbcabf",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-primary-fixed": "#002113",
+                    "on-primary-container": "#00422b",
+                    "surface-container": "#e8f0e9",
+                    "secondary-fixed": "#dae2fd",
+                    "primary-fixed": "#6ffbbe",
+                    "primary-fixed-dim": "#4edea3",
+                    "secondary-fixed-dim": "#bec6e0",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#5c647a",
+                    "on-secondary-fixed-variant": "#3f465c",
+                    "on-background": "#161d19",
+                    "background": "#f4fbf4",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d4dcd5",
+                    "on-surface-variant": "#3c4a42",
+                    "tertiary-container": "#ce9a00",
+                    "surface-container-low": "#eef6ee",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#dde4dd",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#2b322d",
+                    "primary": "#006c49",
+                    "surface-bright": "#f4fbf4",
+                    "on-primary-fixed-variant": "#005236",
+                    "primary-container": "#10b981",
+                    "inverse-on-surface": "#ebf3eb",
+                    "tertiary": "#795900",
+                    "outline": "#6c7a71",
+                    "surface-container-high": "#e3eae3",
+                    "on-error": "#ffffff",
+                    "on-surface": "#161d19",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#dae2fd",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#dde4dd",
+                    "tertiary-fixed": "#ffdf9f",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-secondary-fixed": "#131b2e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f4fbf4;
+        color: #161d19;
+      }
+      h1, h2, h3, .headline {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg shadow-xl shadow-emerald-900/5">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-600">menu</span>
+<span class="text-xl font-extrabold text-emerald-900 font-['Plus_Jakarta_Sans'] tracking-tight">Restorative</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="professional medical doctor headshot with warm smile and clinical setting background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEQfWZz8pt-BmCsGC6343AQjCJXG540WI1qOzwUglrbCs5X-jShY56FoX0jgn4_69EfU8emZY0X-S78zEmYzlWmfwdEKYQmRspc6xY0kxgKfvaD7fqRZTPH6CVjLyMU5M_QIo262KiVYw7nitdBYqyHIB2uHkFJuim1AkivH5dJPsTyvhUMDty87iJoFXgCOM-65OecbxFuKX3A7RJDmtNWBT-b8tVrIUiffgLyuaUNAEJrq5rGtn40Lpy_5WgN1DbF5b_b_ECAuc"/>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 px-6 space-y-8">
+<!-- Hero Section: Emergency Focus -->
+<section class="relative overflow-hidden rounded-lg bg-gradient-to-br from-primary to-primary-container p-8 text-on-primary shadow-2xl">
+<div class="relative z-10 space-y-2">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">emergency</span>
+<span class="text-sm font-bold uppercase tracking-widest text-primary-fixed">Critical Care</span>
+</div>
+<h1 class="text-4xl font-extrabold tracking-tight leading-none">24/7 Emergency</h1>
+<p class="text-primary-fixed/80 max-w-[240px] text-sm leading-relaxed">Round-the-clock restorative care for life's most urgent moments.</p>
+<div class="pt-4">
+<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 shadow-lg">
+                        Call Now <span class="material-symbols-outlined text-sm">call</span>
+</button>
+</div>
+</div>
+<div class="absolute -right-12 -bottom-12 opacity-10 scale-150 rotate-12">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+</section>
+<!-- OPD Schedule Title -->
+<header class="space-y-1">
+<h2 class="text-3xl font-black text-on-surface tracking-tighter">OPD Schedule</h2>
+<p class="text-on-surface-variant text-sm font-medium">Consult with our leading specialists</p>
+</header>
+<!-- Schedule List -->
+<div class="space-y-4">
+<!-- Category: Gynaecology -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">female</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface tracking-tight">Gynaecology</h3>
+</div>
+<span class="text-[10px] font-bold text-tertiary-fixed-variant bg-tertiary-container px-3 py-1 rounded-full uppercase">Floor 2</span>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Dr. Anjali Rathi</p>
+<p class="text-xs text-on-surface-variant">Lead Obstetrician</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-black text-primary">10:00 - 14:00</p>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Mon, Wed, Fri</p>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Dr. Meera Iyer</p>
+<p class="text-xs text-on-surface-variant">Fertility Specialist</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-black text-primary">16:00 - 19:00</p>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Tue, Thu, Sat</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: General Medicine -->
+<div class="bg-surface-container-lowest rounded-lg p-6 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">stethoscope</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface tracking-tight">General Medicine</h3>
+</div>
+<span class="text-[10px] font-bold text-on-primary-fixed-variant bg-primary-fixed px-3 py-1 rounded-full uppercase">Ground</span>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Dr. Sanjay Verma</p>
+<p class="text-xs text-on-surface-variant">Senior Consultant</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-black text-primary">09:00 - 13:00</p>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Daily</p>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="font-bold text-on-surface">Dr. Priya Gupta</p>
+<p class="text-xs text-on-surface-variant">General Physician</p>
+</div>
+<div class="text-right">
+<p class="text-sm font-black text-primary">15:00 - 20:00</p>
+<p class="text-[10px] font-bold text-outline uppercase tracking-wider">Mon - Sat</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Other Specialties Bento -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-6 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">dentistry</span>
+<div>
+<p class="font-bold text-on-surface tracking-tight">Dental Care</p>
+<p class="text-[11px] font-semibold text-secondary-fixed-dim bg-secondary p-1 rounded mt-1 text-center">10:00 - 17:00</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-lg space-y-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">pediatrics</span>
+<div>
+<p class="font-bold text-on-surface tracking-tight">Pediatrics</p>
+<p class="text-[11px] font-semibold text-secondary-fixed-dim bg-secondary p-1 rounded mt-1 text-center">11:00 - 14:00</p>
+</div>
+</div>
+</div>
+<!-- Department Info Card -->
+<div class="bg-surface-container-high rounded-lg p-6 flex items-center gap-6">
+<img class="w-24 h-24 rounded-2xl object-cover shrink-0" data-alt="modern minimalist hospital hallway with clean white surfaces and soft natural lighting coming from large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByEPGpvlHhf4hUEorBAuK989NXzWv9NZheoyimOBTYa-MJ1JFjq-i3QM4UWKiaygEEF_P3upmy57KeGu50OALbEoLDoWpFnFlijZ-Sr0R3W00cJYZdy5-QC2kmKjecMZEfZxetGjIgEqV0GYCzwskGtoEN1pkx3EpZ5BhxnHH6t8TTvmL7Mg9dv_jfmqBvXtLvq6WH0lVRda9xrm0MMC_jdPC9OdqVISmxeimJb_mETjff2aaSHxDWrl4_FD7xp1127T-d11DGZjE"/>
+<div class="space-y-1">
+<p class="font-black text-on-surface uppercase text-[10px] tracking-widest">Facility Note</p>
+<p class="text-sm font-medium text-on-surface-variant leading-snug">All OPD registrations close 30 mins before the shift end. Please bring your medical archive ID.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl shadow-[0_-10px_40px_rgba(16,185,129,0.08)] rounded-t-[2.5rem]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="calendar_add_on">calendar_add_on</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide">Appoint</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-2 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide">Doctors</span>
+</div>
+<!-- ACTIVE: OPD Schedule falls under common portal categories, this button represents current context (Schedule/Info) -->
+<div class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-50 rounded-full px-5 py-2 scale-105 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold tracking-wide">OPD Schedule</span>
+</div>
+</nav>
+</body></html>

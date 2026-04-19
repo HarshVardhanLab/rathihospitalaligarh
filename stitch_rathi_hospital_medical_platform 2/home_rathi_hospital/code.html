@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rathi Hospital | Best hospital in Aligarh</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#dae2fd",
+                        "surface-bright": "#f4fbf4",
+                        "secondary": "#565e74",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-surface-variant": "#3c4a42",
+                        "on-background": "#161d19",
+                        "on-tertiary-container": "#4a3500",
+                        "inverse-surface": "#2b322d",
+                        "inverse-on-surface": "#ebf3eb",
+                        "secondary-fixed": "#dae2fd",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "surface-container-low": "#eef6ee",
+                        "error-container": "#ffdad6",
+                        "primary": "#006c49",
+                        "tertiary-fixed": "#ffdf9f",
+                        "inverse-primary": "#4edea3",
+                        "on-surface": "#161d19",
+                        "surface-container-high": "#e3eae3",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-container-highest": "#dde4dd",
+                        "surface-dim": "#d4dcd5",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#e8f0e9",
+                        "surface": "#f4fbf4",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#795900",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#6ffbbe",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary-container": "#00422b",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-variant": "#dde4dd",
+                        "background": "#f4fbf4",
+                        "on-primary-fixed": "#002113",
+                        "primary-container": "#10b981",
+                        "tertiary-container": "#ce9a00",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#006c49",
+                        "outline": "#6c7a71",
+                        "outline-variant": "#bbcabf",
+                        "on-tertiary-fixed": "#261a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow { box-shadow: 0 20px 40px rgba(16, 29, 25, 0.06); }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg shadow-sm shadow-emerald-900/5 font-['Plus_Jakarta_Sans'] antialiased tracking-tight">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50">Rathi Hospital</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-emerald-700 dark:text-emerald-400 font-bold border-b-2 border-emerald-500 pb-1" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Departments</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Doctors</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-emerald-600 font-semibold px-4 py-2 hover:bg-emerald-50 rounded-full transition-all active:scale-95">OPD Schedule</button>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-3 rounded-full font-bold text-sm tracking-wide shadow-lg shadow-primary/20 active:scale-95 transition-all">Book Appointment</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.95]" data-alt="Modern high-end hospital lobby with warm natural lighting, minimalist architectural features, and a sense of calm restorative professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCETaBgj5Bcs1OC_zzWlWWoOTOoxuzR4e4GaYWSUvo6krpwl3yAH5LG1J-XWrQByo4B_QROp6aAVnwwE_Di89RpfAPsAq2xWdauQSj5YprAXT6mr4evOfG0QBYeeER8WzM6ThOLTGn_b_KDfhrv3KXHIxe1J3nLMUQEQ4qRc5o2J4G2GG1NGqsjD16ERxuNW5obj2Q-b88tAFXNV7aNalHhzVnpUowGW09BmwLVsIXKKcrsVwIrGuWloozVwjyBXLuMRiWaHTBl9LA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container/20 text-primary font-semibold text-sm mb-6 tracking-wide">
+                    BEST HOSPITAL IN ALIGARH
+                </span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tighter mb-8">
+                    Excellence in <br/><span class="text-primary">Healthcare</span>
+</h1>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed max-w-lg">
+                    Rathi Hospital combines restorative medical expertise with compassionate care to provide Aligarh's most trusted multispeciality clinical environment.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-base tracking-wide flex items-center gap-2 editorial-shadow active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+                        Book Appointment
+                    </button>
+<a class="bg-surface-container-lowest text-on-surface px-8 py-4 rounded-full font-bold text-base flex items-center gap-2 editorial-shadow active:scale-95 transition-all" href="tel:05712410992">
+<span class="material-symbols-outlined text-error">emergency</span>
+                        0571-241-0992
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="max-w-7xl mx-auto px-6 -mt-16 relative z-20">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow">
+<div class="p-8 text-center md:border-r border-outline-variant/20">
+<div class="text-primary text-3xl font-extrabold mb-1">24/7</div>
+<div class="text-on-surface-variant text-sm font-medium uppercase tracking-widest">Emergency</div>
+</div>
+<div class="p-8 text-center md:border-r border-outline-variant/20">
+<div class="text-tertiary text-3xl font-extrabold mb-1 flex justify-center items-center gap-1">4.0<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<div class="text-on-surface-variant text-sm font-medium uppercase tracking-widest">Rating</div>
+</div>
+<div class="p-8 text-center md:border-r border-outline-variant/20">
+<div class="text-primary text-3xl font-extrabold mb-1">95+</div>
+<div class="text-on-surface-variant text-sm font-medium uppercase tracking-widest">Reviews</div>
+</div>
+<div class="p-8 text-center">
+<div class="text-primary text-3xl font-extrabold mb-1">Expert</div>
+<div class="text-on-surface-variant text-sm font-medium uppercase tracking-widest">Care</div>
+</div>
+</div>
+</section>
+<!-- About Preview Section -->
+<section class="max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-square rounded-lg overflow-hidden editorial-shadow">
+<img class="w-full h-full object-cover" data-alt="Close up of high-tech medical monitoring equipment in a clean bright clinical setting with soft natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7e4YAnCPODNebWTzh0ABza4pAGD8MgLpmUQoty65OMHGrPttTW-VWIqEyMdLbQg_Vjw36nhi4f4p63wxAMYkP3OAn92OmNSjprVJftuqTDO0obvpJFFFaKCDP1L9qD7De3loJ5qv138H2Y4_a3jzEnyKWs0u2UXD5A2KepGpI7VXQ4X6BcgTuOjJn4ZW9qdTFNTlHWAERtOg4-0xf-ehcrk_YvUYN9bhksPA1gUCmC25ZoSwlGSDUohmQsX51wTexKjDMJxhsldU"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-64 p-8 bg-primary text-on-primary rounded-lg editorial-shadow hidden md:block">
+<div class="text-4xl font-bold mb-2">25+</div>
+<div class="text-sm opacity-90 leading-tight">Years of Trusted Healthcare in Aligarh.</div>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface leading-tight">
+                Restorative Excellence. <br/>Trusted multispeciality hospital in Aligarh.
+            </h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                Rathi Hospital has been a cornerstone of Aligarh's medical landscape, providing advanced diagnostics and specialized treatments. Our philosophy centers on combining clinical precision with a healing environment that prioritizes patient comfort and rapid recovery.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-semibold">Advanced ICU Units</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-semibold">Modern Pathology Lab</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-semibold">24/7 Pharmacy Service</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-semibold">In-house Imaging</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Departments Bento Grid -->
+<section class="bg-surface-container-low py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-4">Specialized Departments</h2>
+<p class="text-on-surface-variant max-w-xl">Focused expertise across all major medical disciplines, ensuring comprehensive family care.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all group">
+                    View All Departments <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Gynaecology - Large Card -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-lg editorial-shadow bg-surface-container-lowest h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40" data-alt="Professional medical consultation room with soft focus on prenatal equipment and welcoming atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRgv7t0cbr2CJM0qYe8rG-yv9XqEJKUMytSkpo0GbjqRJ135W3Gpsxn1FaUYibfeDjiVpasT8PgnSHxjI96wz1pRXe56BLheOiaBHYmKUEkpmuA5L-xf_es6B0vDxsIInTB7MkwnuUFy-kkn1ZgWv-wT1UQa-IIC1SRAQ8uvwgb5V5FjmHSQSryXi98v_DX_1JCsKieSqgvluHWRNKIGxQU0OmZmtxfHkqz2qgXlrvMS33_x5yG4A05FV87CWtIyAVR5WqANYBuoo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+<div class="relative h-full p-10 flex flex-col justify-end">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">female</span>
+<h3 class="text-3xl font-extrabold mb-4">Gynaecology &amp; Obstetrics</h3>
+<p class="text-on-surface-variant max-w-sm mb-6">Comprehensive care for women's health, from adolescence to menopause and maternity.</p>
+<button class="w-fit text-primary font-bold uppercase text-xs tracking-widest bg-white px-6 py-3 rounded-full shadow-sm">Explore Services</button>
+</div>
+</div>
+<!-- Orthopaedics -->
+<div class="group relative overflow-hidden rounded-lg editorial-shadow bg-surface-container-lowest h-[400px]">
+<div class="p-10 h-full flex flex-col">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">skeleton</span>
+<h3 class="text-2xl font-extrabold mb-4">Orthopaedics</h3>
+<p class="text-on-surface-variant mb-auto">Specialized bone, joint, and spine care including advanced trauma surgery.</p>
+<div class="mt-6 flex items-center gap-2 text-primary font-bold">
+                            Learn More <span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Cardiology -->
+<div class="group relative overflow-hidden rounded-lg editorial-shadow bg-surface-container-lowest h-[400px]">
+<div class="p-10 h-full flex flex-col">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">cardiology</span>
+<h3 class="text-2xl font-extrabold mb-4">Cardiology</h3>
+<p class="text-on-surface-variant mb-auto">Heart wellness monitoring and specialized cardiovascular treatments for all ages.</p>
+<div class="mt-6 flex items-center gap-2 text-primary font-bold">
+                            Learn More <span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Doctors -->
+<section class="max-w-7xl mx-auto px-6 py-32">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-4">Meet Our Experts</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg">Headed by pioneers Dr. Asha Rathi and Dr. G.M. Rathi, our clinical team brings decades of combined expertise to your care.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Dr. Asha Rathi -->
+<div class="flex flex-col md:flex-row gap-8 bg-surface-container-lowest p-8 rounded-lg editorial-shadow border border-outline-variant/10">
+<div class="w-full md:w-56 h-72 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a female professional doctor in a lab coat with a warm approachable expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9f1pbLErMuSvn3zmCDOqTYH4D1-G4qye_tU3exZlt2DMqDnTG2mXYOZYxt5vEPqy1N8qygFNKgeM1ROlY9oWuGeg_JdLRHcs01LJQtZxvOaYtshRZSHKsw6UHu1OmOfb1xPzH8fl-oybhm3DQ_nU6-3KfLwGVEKq6E9FhjeWRt7nKp-xcOaA5VGprGL_ydZLGlpiMmojvdOrdKFpVwlKJ3zytqnnFzhl1qLaFbehjiemGp_HzfoVXBUcU67_OZupFIUE4k8wgjYo"/>
+</div>
+<div class="flex flex-col justify-center">
+<div class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Senior Gynaecologist</div>
+<h3 class="text-3xl font-extrabold text-on-surface mb-3">Dr. Asha Rathi</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Dedicated to providing maternal healthcare and surgical gynaecological solutions for over 25 years in Aligarh.</p>
+<div class="flex gap-4">
+<button class="bg-primary-container/20 text-primary px-6 py-2 rounded-full font-bold text-sm active:scale-95 transition-all">View Profile</button>
+</div>
+</div>
+</div>
+<!-- Dr. G.M. Rathi -->
+<div class="flex flex-col md:flex-row gap-8 bg-surface-container-lowest p-8 rounded-lg editorial-shadow border border-outline-variant/10">
+<div class="w-full md:w-56 h-72 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an experienced male doctor in medical attire with a professional confident stance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjQ2tm1ax6jQ_iOpY0qOwWmiTrWkj4Y-2b9OlyU99v0N-i3t9S9yxM1b7FZpyfVAikbv_Uq-byH3tyFbucAfxkCcuyW6FGK9ybB730dvqELjaXpj2L9h9DRwUgNcY8lGlx-6YINVOAiB4GreGZZMnuypou2JsZGLy57ZhujlIXgpmXsbZjLVUWh3CMOeuCEz7HYbAZc56GlDB-R-cDLBXE9veT4MgcO-aswIgALjfvKHZ1cYDRh4KJLnQgdlMVQopjoT9ZGni8Hak"/>
+</div>
+<div class="flex flex-col justify-center">
+<div class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Senior Physician</div>
+<h3 class="text-3xl font-extrabold text-on-surface mb-3">Dr. G.M. Rathi</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Renowned for clinical diagnostics and specialized care, ensuring patient wellness through evidence-based medicine.</p>
+<div class="flex gap-4">
+<button class="bg-primary-container/20 text-primary px-6 py-2 rounded-full font-bold text-sm active:scale-95 transition-all">View Profile</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-primary py-32 px-6">
+<div class="max-w-7xl mx-auto text-center">
+<span class="material-symbols-outlined text-primary-fixed-dim text-6xl mb-8">format_quote</span>
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-extrabold text-on-primary mb-12 italic leading-snug">
+                    "The medical attention and hospitality at Rathi Hospital were exceptional. From the reception to the doctors, everyone was professional and comforting. Truly the best healthcare experience in Aligarh."
+                </h2>
+<div class="flex flex-col items-center">
+<div class="text-primary-fixed-dim font-bold text-xl mb-1">Rohan Sharma</div>
+<div class="text-on-primary/70 text-sm tracking-widest uppercase">Satisfied Patient</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg text-left border border-white/10">
+<div class="flex text-tertiary-fixed-dim mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-primary/90 mb-6 italic">"Excellent maternity care. Dr. Asha Rathi is incredibly knowledgeable."</p>
+<div class="text-on-primary font-bold">Priya Verma</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg text-left border border-white/10">
+<div class="flex text-tertiary-fixed-dim mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-primary/90 mb-6 italic">"Modern facilities and very clean environment. Highly recommended."</p>
+<div class="text-on-primary font-bold">Amit K.</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-lg text-left border border-white/10">
+<div class="flex text-tertiary-fixed-dim mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-primary/90 mb-6 italic">"Emergency services were quick and effective. Life-saving care."</p>
+<div class="text-on-primary font-bold">Suresh Gupta</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-slate-50 dark:bg-slate-900 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-6">
+<div class="text-xl font-bold text-emerald-800 dark:text-emerald-200">Rathi Hospital</div>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">Providing high-end medical care with a focus on restorative wellness in the heart of Aligarh.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Emergency Care</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Career</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Feedback</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-6">Departments</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors" href="#">Gynaecology</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors" href="#">Orthopaedics</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors" href="#">Cardiology</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors" href="#">General Medicine</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface mb-6">Contact Us</h4>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<div class="text-slate-600 dark:text-slate-400">0571-241-0992</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div class="text-slate-600 dark:text-slate-400">info@rathihospital.com</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">pin_drop</span>
+<div class="text-slate-600 dark:text-slate-400">Aligarh, Uttar Pradesh, India</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Rathi Hospital. Dedicated to Restorative Excellence.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full editorial-shadow flex items-center justify-center hover:scale-110 active:scale-95 transition-all" href="https://wa.me/9105712410992" target="_blank">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.316 1.592 5.43 0 9.856-4.426 9.858-9.855.002-5.43-4.425-9.856-9.853-9.856-5.417 0-9.856 4.439-9.858 9.856 0 2.038.594 3.635 1.593 5.313l-.994 3.63 3.738-.98zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</body></html>

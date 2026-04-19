@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Rathi Hospital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#dae2fd",
+                      "surface-bright": "#f4fbf4",
+                      "secondary": "#565e74",
+                      "on-primary-fixed-variant": "#005236",
+                      "on-surface-variant": "#3c4a42",
+                      "on-background": "#161d19",
+                      "on-tertiary-container": "#4a3500",
+                      "inverse-surface": "#2b322d",
+                      "inverse-on-surface": "#ebf3eb",
+                      "secondary-fixed": "#dae2fd",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#5c4300",
+                      "surface-container-low": "#eef6ee",
+                      "error-container": "#ffdad6",
+                      "primary": "#006c49",
+                      "tertiary-fixed": "#ffdf9f",
+                      "inverse-primary": "#4edea3",
+                      "on-surface": "#161d19",
+                      "surface-container-high": "#e3eae3",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#f9bd22",
+                      "primary-fixed-dim": "#4edea3",
+                      "surface-container-highest": "#dde4dd",
+                      "surface-dim": "#d4dcd5",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#e8f0e9",
+                      "surface": "#f4fbf4",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#795900",
+                      "on-error-container": "#93000a",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#6ffbbe",
+                      "on-secondary-container": "#5c647a",
+                      "on-primary-container": "#00422b",
+                      "on-secondary-fixed": "#131b2e",
+                      "surface-variant": "#dde4dd",
+                      "background": "#f4fbf4",
+                      "on-primary-fixed": "#002113",
+                      "primary-container": "#10b981",
+                      "tertiary-container": "#ce9a00",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#006c49",
+                      "outline": "#6c7a71",
+                      "outline-variant": "#bbcabf",
+                      "on-tertiary-fixed": "#261a00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #006c49 0%, #10b981 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg shadow-sm shadow-emerald-900/5 font-['Plus_Jakarta_Sans'] antialiased tracking-tight">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50">
+                Rathi Hospital
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Home</a>
+<a class="text-emerald-700 dark:text-emerald-400 font-bold border-b-2 border-emerald-500 pb-1" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Departments</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Doctors</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block px-5 py-2.5 text-emerald-700 dark:text-emerald-400 font-semibold hover:bg-emerald-50 dark:hover:bg-emerald-900/20 rounded-full transition-all active:scale-95 duration-200 ease-out">
+                    OPD Schedule
+                </button>
+<button class="editorial-gradient px-6 py-2.5 text-white font-bold rounded-full shadow-lg shadow-emerald-900/10 active:scale-95 duration-200 ease-out">
+                    Book Appointment
+                </button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-bold text-xs tracking-widest uppercase mb-6">
+                        Established 1994
+                    </span>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-background tracking-tighter leading-tight mb-8">
+                        Affordable, trusted healthcare in Aligarh
+                    </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-xl mb-10">
+                        Delivering excellence in healthcare for over 30 years. We combine compassionate care with clinical precision to serve the community of Aligarh.
+                    </p>
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-3xl font-extrabold text-primary">30+</span>
+<span class="text-sm font-medium text-on-surface-variant">Years of Legacy</span>
+</div>
+<div class="w-px h-12 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="text-3xl font-extrabold text-primary">100k+</span>
+<span class="text-sm font-medium text-on-surface-variant">Happy Patients</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Modern hospital hallway" class="w-full h-full object-cover" data-alt="Modern high-end hospital hallway with warm lighting, polished floors, and professional medical staff walking in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC413uWItbgeDipf0R5k7kLJeM8Q_giQptqnwm3N0wVez0LfpHixpG15L-lgzLpeRTLimJXq11UlcQNrO8jRp2iL655sA0Ci237yv11IF0oRfbBd9KYKBTwJxL19qDjAWIPANELoUIRI4TmT_DcHmsCkqB9yKWxHEQxVO8ryfbO65cYGiJ2G4oGHjaOJgUKEWHYwBnGyEXTEiVyHjsu7BI68XyQ2wAa-divEXhljHu9BlPfpEUky5aDw2XuvTzANu_0_mGfymQ71zg"/>
+</div>
+<div class="absolute -bottom-10 -left-10 p-8 bg-surface-container-lowest rounded-lg shadow-xl max-w-xs border border-outline-variant/10">
+<p class="italic text-on-surface-variant leading-relaxed">
+                            "Our commitment to the people of Aligarh has only grown stronger since our inception in 1994."
+                        </p>
+<p class="mt-4 font-bold text-primary">— Dr. Rathi, Founder</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 bg-surface-container-lowest p-12 rounded-lg relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="rocket_launch">rocket_launch</span>
+<h2 class="font-headline text-3xl font-bold mb-4">Our Mission</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                                To provide world-class, affordable healthcare services through innovation, integrity, and clinical excellence while maintaining the highest ethical standards.
+                            </p>
+</div>
+<div class="absolute top-0 right-0 p-12 opacity-5 scale-150 transition-transform group-hover:scale-125">
+<span class="material-symbols-outlined text-[120px]" data-icon="health_and_safety">health_and_safety</span>
+</div>
+</div>
+<div class="md:col-span-4 editorial-gradient p-12 rounded-lg text-white">
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="visibility">visibility</span>
+<h2 class="font-headline text-3xl font-bold mb-4">Our Vision</h2>
+<p class="text-on-primary/90 leading-relaxed">
+                            To be the most trusted healthcare destination in North India, recognized for patient-centric care and transformative medical results.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4">Why choose us</h2>
+<div class="h-1.5 w-20 editorial-gradient mx-auto rounded-full"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="medical_services">medical_services</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Expert Doctors</h3>
+<p class="text-on-surface-variant">Our team consists of board-certified specialists with decades of experience in diverse medical fields.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container/30 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="apartment">apartment</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Modern Facilities</h3>
+<p class="text-on-surface-variant">We utilize the latest medical technology and equipment to ensure accurate diagnosis and treatment.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-tertiary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="text-xl font-bold mb-3">24/7 Care</h3>
+<p class="text-on-surface-variant">Emergency services and critical care support available round the clock for your peace of mind.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Infrastructure Highlights -->
+<section class="bg-on-background py-24 text-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4 text-surface-bright">Infrastructure Highlights</h2>
+<p class="text-surface-variant/80 text-lg">Designed for healing and efficiency, our facility features state-of-the-art medical environments.</p>
+</div>
+<a class="px-8 py-3 rounded-full border border-surface-variant/20 hover:bg-surface-variant/10 transition-all font-semibold" href="#">View Photo Gallery</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-4" data-icon="emergency">emergency</span>
+<h4 class="font-bold text-xl mb-2">Modern ICU</h4>
+<p class="text-sm text-surface-variant/60">Fully monitored beds with advanced ventilators.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-4" data-icon="home_health">home_health</span>
+<h4 class="font-bold text-xl mb-2">Advanced OT</h4>
+<p class="text-sm text-surface-variant/60">Laminar airflow systems for sterile surgeries.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-4" data-icon="biotech">biotech</span>
+<h4 class="font-bold text-xl mb-2">In-house Diagnostics</h4>
+<p class="text-sm text-surface-variant/60">High-speed pathology and imaging labs.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-4" data-icon="medication">medication</span>
+<h4 class="font-bold text-xl mb-2">24/7 Pharmacy</h4>
+<p class="text-sm text-surface-variant/60">Complete inventory of critical medicines.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-surface-container-high rounded-xl p-12 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-3xl font-extrabold mb-6">Need expert medical advice?</h2>
+<p class="text-on-surface-variant text-lg mb-10 max-w-2xl mx-auto">
+                            Our team is here to support your journey to health. Book a consultation or visit our facility today.
+                        </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="editorial-gradient px-10 py-4 text-white font-bold rounded-full shadow-xl shadow-emerald-900/20 active:scale-95 duration-200">
+                                Contact Us Today
+                            </button>
+<button class="bg-surface-container-lowest px-10 py-4 text-on-surface font-bold rounded-full shadow-sm hover:bg-surface-container hover:shadow-md transition-all active:scale-95 duration-200">
+                                View Departments
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-t-[3rem] mt-20 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-emerald-800 dark:text-emerald-200 mb-6">
+                    Rathi Hospital
+                </div>
+<p class="text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">
+                    Providing compassionate healthcare since 1994. Your wellness is our life's mission.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-emerald-700 cursor-pointer" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-emerald-700 cursor-pointer" data-icon="contact_page">contact_page</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 mb-6 uppercase tracking-widest text-xs">Quick Links</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Emergency Care</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Career</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Feedback</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-emerald-500 transition-colors hover:underline underline-offset-4" href="#">Terms of Service</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 mb-6 uppercase tracking-widest text-xs">Departments</h4>
+<div class="flex flex-col gap-4 text-slate-500 dark:text-slate-400">
+<span class="hover:text-emerald-500 cursor-pointer transition-colors">Cardiology</span>
+<span class="hover:text-emerald-500 cursor-pointer transition-colors">Pediatrics</span>
+<span class="hover:text-emerald-500 cursor-pointer transition-colors">Orthopedics</span>
+<span class="hover:text-emerald-500 cursor-pointer transition-colors">Neurology</span>
+<span class="hover:text-emerald-500 cursor-pointer transition-colors">General Medicine</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-emerald-700 dark:text-emerald-400 mb-6 uppercase tracking-widest text-xs">Contact Us</h4>
+<p class="text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                    Aligarh, Uttar Pradesh, India
+                </p>
+<p class="text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+                    +91-571-XXXXXXX
+                </p>
+<p class="text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                    info@rathihospital.com
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-emerald-900/5 text-center text-slate-400 text-xs">
+            © 2024 Rathi Hospital. Dedicated to Restorative Excellence.
+        </div>
+</footer>
+</body></html>
