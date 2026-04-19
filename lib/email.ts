@@ -1,6 +1,8 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Initialize Resend only if API key is available
+const resendApiKey = process.env.RESEND_API_KEY || ''
+const resend = resendApiKey ? new Resend(resendApiKey) : null
 
 interface AppointmentEmailData {
   patientName: string
@@ -13,6 +15,15 @@ interface AppointmentEmailData {
 }
 
 export async function sendAppointmentNotification(data: AppointmentEmailData) {
+  // Check if Resend is configured
+  if (!resend) {
+    console.warn('Resend is not configured. Email notifications are disabled.')
+    return {
+      success: false,
+      error: 'Email service not configured'
+    }
+  }
+
   try {
     // Email to hospital staff
     const hospitalEmail = await resend.emails.send({
@@ -193,6 +204,15 @@ export async function sendContactNotification(data: {
   subject: string
   message: string
 }) {
+  // Check if Resend is configured
+  if (!resend) {
+    console.warn('Resend is not configured. Email notifications are disabled.')
+    return {
+      success: false,
+      error: 'Email service not configured'
+    }
+  }
+
   try {
     // Email to hospital staff
     const hospitalEmail = await resend.emails.send({
