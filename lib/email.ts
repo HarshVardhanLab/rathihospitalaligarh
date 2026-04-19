@@ -153,7 +153,7 @@ export async function sendAppointmentNotification(data: AppointmentEmailData) {
                   </p>
                   
                   <div style="text-align: center;">
-                    <a href="https://wa.me/919105712410992" class="button">Contact Us on WhatsApp</a>
+                    <a href="https://wa.me/919927991621" class="button">Contact Us on WhatsApp</a>
                   </div>
                   
                   <p style="margin-top: 20px; font-size: 14px; color: #666;">

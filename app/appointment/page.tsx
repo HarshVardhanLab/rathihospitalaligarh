@@ -67,7 +67,7 @@ Department: ${formData.department}
 Preferred Date: ${formData.date}
 Message: ${formData.message}`
     
-    const whatsappUrl = `https://wa.me/919105712410992?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/919927991621?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 

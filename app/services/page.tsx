@@ -129,7 +129,7 @@ export default function ServicesPage() {
                 Call Emergency: 0571-241-0992
               </a>
               <a
-                href="https://wa.me/919105712410992"
+                href="https://wa.me/919927991621"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-lg active:scale-95 transition-all"

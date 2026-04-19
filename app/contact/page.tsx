@@ -295,7 +295,7 @@ export default function ContactPage() {
               </svg>
             </a>
             <a
-              href="https://wa.me/919105712410992"
+              href="https://wa.me/919927991621"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
